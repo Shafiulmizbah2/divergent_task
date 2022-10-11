@@ -4,7 +4,7 @@ const Carousel = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-Carousel.Item = ({ children, width }) => {
+Carousel.Item = ({ children, width = "30.678rem" }) => {
   return <CarouselItem width={width}>{children}</CarouselItem>;
 };
 
@@ -32,8 +32,8 @@ const Container = styled.div`
   overflow-x: scroll;
 `;
 const CarouselItem = styled.div`
-  min-width: 25.6rem;
-  width: ${({ width }) => (width ? width : "25.6rem")};
+  min-width: ${({ width }) => width};
+  width: ${({ width }) => width};
   object-fit: cover;
   margin: 0.5rem;
   border-radius: 1.1rem;

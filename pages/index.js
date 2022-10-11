@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Footer from "./components/Footer";
+import CategorySection from "./components/home/CategorySection";
 import Header from "./components/home/Header";
+import NewRelease from "./components/home/NewRelease";
 import TopCarouselContainer from "./components/home/TopCarouselContainer";
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
       <main>
         <Header />
         <TopCarouselContainer />
+        <CategorySection />
+        <NewRelease />
       </main>
 
       <Footer />

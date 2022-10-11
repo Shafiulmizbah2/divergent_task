@@ -21,8 +21,9 @@ Section.Body = ({ children }) => {
 };
 
 const Container = styled.section`
-  width: 100vw;
-  margin: 2rem 0 2rem 2rem;
+  margin: 1rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 `;
 
@@ -30,6 +31,7 @@ const SectionHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 `;
 
 const SectionTitle = styled.p`
@@ -44,6 +46,8 @@ const SectionLink = styled.p`
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
 `;
 
 const SectionBody = styled.div`
