@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Footer from "./components/Footer";
+import Header from "./components/home/Header";
+import TopCarouselContainer from "./components/home/TopCarouselContainer";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -11,9 +13,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>hello there</h1>
+        <Header />
+        <TopCarouselContainer />
       </main>
+
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
