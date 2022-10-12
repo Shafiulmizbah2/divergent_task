@@ -7,11 +7,12 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: 2px;
+  scrollbar-width: 5px;
+  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
-  height: 2px;
+  height: 5px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
