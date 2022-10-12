@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Carousel = ({ children }) => {
+function Carousel({ children }) {
   return <Container>{children}</Container>;
-};
+}
 
 Carousel.Item = ({ children, width = "30.678rem", bgColor }) => {
   return (

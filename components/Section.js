@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Section = ({ children }) => {
+function Section({ children }) {
   return <Container>{children}</Container>;
-};
+}
 
 Section.Header = ({ children }) => {
   return <SectionHeader>{children}</SectionHeader>;
