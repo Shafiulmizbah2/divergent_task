@@ -8,7 +8,7 @@ const Packages = () => {
       <Wrapper>
         <NavigateHeader Title="Packages" />
         <Section>
-          <Section.Header>
+          <Section.Header style={{ marginTop: "1rem" }}>
             <Section.Title title="Enjoy Unlimited Music & Videos" />
           </Section.Header>
           <Section.Body>

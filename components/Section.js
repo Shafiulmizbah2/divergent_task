@@ -4,8 +4,8 @@ function Section({ children }) {
   return <Container>{children}</Container>;
 }
 
-Section.Header = ({ children }) => {
-  return <SectionHeader>{children}</SectionHeader>;
+Section.Header = ({ children, style }) => {
+  return <SectionHeader style={style}>{children}</SectionHeader>;
 };
 
 Section.Title = ({ title, caption }) => {

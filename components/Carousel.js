@@ -32,7 +32,7 @@ Carousel.Action = ({ title, ...rest }) => {
 const Container = styled.div`
   display: flex;
   width: 100%;
-  padding: 0.8rem 0;
+  padding: 0.5rem 0;
   overflow-x: scroll;
 `;
 const CarouselItem = styled.div`

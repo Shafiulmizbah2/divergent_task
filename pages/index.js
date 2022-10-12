@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   height: 100%;
   width: 100%;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto 0.2rem auto;
 `;
 
 export default Home;
