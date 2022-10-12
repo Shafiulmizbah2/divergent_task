@@ -4,8 +4,12 @@ const Carousel = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-Carousel.Item = ({ children, width = "30.678rem" }) => {
-  return <CarouselItem width={width}>{children}</CarouselItem>;
+Carousel.Item = ({ children, width = "30.678rem", bgColor }) => {
+  return (
+    <CarouselItem width={width} bgColor={bgColor}>
+      {children}
+    </CarouselItem>
+  );
 };
 
 Carousel.Image = ({ src, alt = "image" }) => {
@@ -36,8 +40,10 @@ const CarouselItem = styled.div`
   width: ${({ width }) => width};
   object-fit: cover;
   margin: 0.5rem;
+  padding-bottom: 1rem;
   border-radius: 1.1rem;
   overflow: hidden;
+  background-color: ${({ bgColor }) => (bgColor ? bgColor : "transparent")};
 `;
 
 const Carouselmage = styled.img`
@@ -68,6 +74,7 @@ const CarouselAction = styled.div`
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.9rem;
+  cursor: pointer;
 
   @media only screen and (max-width: 600px) {
     font-size: 1rem;

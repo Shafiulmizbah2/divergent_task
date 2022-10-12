@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 const navItems = [
   {
     name: "home icon",
     src: "./img/ant-design_home-filled.svg",
-    to: "",
+    to: "/",
   },
   {
     name: "music icon",
@@ -24,15 +25,17 @@ const navItems = [
   {
     name: "package icon",
     src: "./img/mdi_package-check.svg",
-    to: "",
+    to: "/packages",
   },
 ];
 
 const Footer = (props) => {
+  const router = useRouter();
+
   return (
     <Container>
-      {navItems.map((item) => (
-        <NavItem href={item.to}>
+      {navItems.map((item, idx) => (
+        <NavItem onClick={() => router.push(item.to)} key={idx}>
           <NavIcon src={item.src} alt={item.name} />
         </NavItem>
       ))}

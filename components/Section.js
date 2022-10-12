@@ -8,8 +8,13 @@ Section.Header = ({ children }) => {
   return <SectionHeader>{children}</SectionHeader>;
 };
 
-Section.Title = ({ title }) => {
-  return <SectionTitle>{title}</SectionTitle>;
+Section.Title = ({ title, caption }) => {
+  return (
+    <SectionTitle>
+      {title}
+      <span>{caption}</span>
+    </SectionTitle>
+  );
 };
 
 Section.Link = ({ title }) => {
@@ -39,6 +44,16 @@ const SectionTitle = styled.p`
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.7rem;
+  display: flex;
+  flex-direction: column;
+
+  & > span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.05rem;
+    color: ${({ theme }) => theme.text};
+  }
 `;
 
 const SectionLink = styled.p`

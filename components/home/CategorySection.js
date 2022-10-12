@@ -12,8 +12,8 @@ const CategorySection = () => {
       </Section.Header>
       <Section.Body>
         <CategoryContainer>
-          {Categories.map((item) => (
-            <Category>
+          {Categories.map((item, idx) => (
+            <Category key={idx}>
               <img src="./img/Chart.png" alt="chart" />
               <p>{item}</p>
             </Category>
