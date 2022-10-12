@@ -42,5 +42,4 @@ main {
   height: calc(100vh - 80px);
   width: 100%;
   overflow-y: auto;
-  /* overflow-x: hidden; */
 }

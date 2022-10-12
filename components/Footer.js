@@ -44,6 +44,7 @@ const Footer = (props) => {
 };
 
 const Container = styled.footer`
+  width: 100vw;
   height: 80px;
   background-color: rgba(${({ theme }) => theme.primaryLightRgb}, 0.2);
   display: flex;

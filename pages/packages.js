@@ -5,60 +5,70 @@ import Section from "../components/Section";
 const Packages = () => {
   return (
     <main>
-      <NavigateHeader Title="Packages" />
-      <Section>
-        <Section.Header>
-          <Section.Title title="Enjoy Unlimited Music & Videos" />
-        </Section.Header>
-        <Section.Body>
-          <ItemContainer>
-            <Item>
-              <ItemIcon src="./img/Group 20.svg" alt="lock icon" />
-              <ItemTitle>Unlock premium Natok and dramas</ItemTitle>
-            </Item>
+      <Wrapper>
+        <NavigateHeader Title="Packages" />
+        <Section>
+          <Section.Header>
+            <Section.Title title="Enjoy Unlimited Music & Videos" />
+          </Section.Header>
+          <Section.Body>
+            <ItemContainer>
+              <Item>
+                <ItemIcon src="./img/Group 20.svg" alt="lock icon" />
+                <ItemTitle>Unlock premium Natok and dramas</ItemTitle>
+              </Item>
 
-            <Item>
-              <ItemIcon src="./img/Group 1625.svg" alt="Download icon" />
-              <ItemTitle>Unlimited download</ItemTitle>
-            </Item>
+              <Item>
+                <ItemIcon src="./img/Group 1625.svg" alt="Download icon" />
+                <ItemTitle>Unlimited download</ItemTitle>
+              </Item>
 
-            <Item>
-              <ItemIcon src="./img/Group 1675.svg" alt="HD icon" />
-              <ItemTitle>Watch in HD up to 4K resolution</ItemTitle>
-            </Item>
-          </ItemContainer>
-        </Section.Body>
-      </Section>
+              <Item>
+                <ItemIcon src="./img/Group 1675.svg" alt="HD icon" />
+                <ItemTitle>Watch in HD up to 4K resolution</ItemTitle>
+              </Item>
+            </ItemContainer>
+          </Section.Body>
+        </Section>
 
-      <Section>
-        <Section.Header>
-          <Section.Title
-            title="Select Premium Plan"
-            caption="Ad-Free, Unlimited offline Downloads and playlist"
-          />
-        </Section.Header>
-        <Section.Body>
-          <PlansContainer>
-            <Plan>
-              <PlanTitle>
-                Mini Packages
-                <span>15 days</span>
-              </PlanTitle>
-              <PlanPrice>29 BDT</PlanPrice>
-            </Plan>
-            <Plan>
-              <PlanTitle>
-                Stander Packages
-                <span>30 days</span>
-              </PlanTitle>
-              <PlanPrice>39 BDT</PlanPrice>
-            </Plan>
-          </PlansContainer>
-        </Section.Body>
-      </Section>
+        <Section>
+          <Section.Header>
+            <Section.Title
+              title="Select Premium Plan"
+              caption="Ad-Free, Unlimited offline Downloads and playlist"
+            />
+          </Section.Header>
+          <Section.Body>
+            <PlansContainer>
+              <Plan>
+                <PlanTitle>
+                  Mini Packages
+                  <span>15 days</span>
+                </PlanTitle>
+                <PlanPrice>29 BDT</PlanPrice>
+              </Plan>
+              <Plan>
+                <PlanTitle>
+                  Stander Packages
+                  <span>30 days</span>
+                </PlanTitle>
+                <PlanPrice>39 BDT</PlanPrice>
+              </Plan>
+            </PlansContainer>
+          </Section.Body>
+        </Section>
+      </Wrapper>
     </main>
   );
 };
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+`;
+
 const ItemContainer = styled.div`
   margin: 1rem 0;
 `;
