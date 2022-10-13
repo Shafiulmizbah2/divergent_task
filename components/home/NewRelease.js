@@ -4,7 +4,7 @@ import theme from "../../theme";
 
 const NewRelease = () => {
   return (
-    <Section>
+    <Section style={{ paddingBottom: "1rem" }}>
       <Section.Header>
         <Section.Title title="New Release Video" />
         <Section.Link title="View All" />

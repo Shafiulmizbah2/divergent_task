@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-function Section({ children }) {
-  return <Container>{children}</Container>;
+function Section({ children, style }) {
+  return <Container style={style}>{children}</Container>;
 }
 
 Section.Header = ({ children, style }) => {

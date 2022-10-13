@@ -32,7 +32,7 @@ Carousel.Action = ({ title, ...rest }) => {
 const Container = styled.div`
   display: flex;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0;
   overflow-x: scroll;
 `;
 const CarouselItem = styled.div`
@@ -40,7 +40,7 @@ const CarouselItem = styled.div`
   width: ${({ width }) => width};
   object-fit: cover;
   margin: 0.5rem;
-  padding-bottom: 1rem;
+  // padding-bottom: 1rem;
   border-radius: 1.1rem;
   overflow: hidden;
   background-color: ${({ bgColor }) => (bgColor ? bgColor : "transparent")};
